@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
 export default class SpeedSlider extends Component {
+  constructor(props) {
+    super(props);
+    console.log('PROPS IN SpeedSlider:', this.props);
+  }
+
   render() {
     return (
       <input id="mySlider"

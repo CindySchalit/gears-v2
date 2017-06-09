@@ -1,10 +1,19 @@
-import { combineReducers } from 'redux'
+import { SET_SPEED } from '../constants'
 
-const initialState = {}
+const initialState = {
+  speed: 0,
+}
 
 const rootReducer = function(state = initialState, action) {
+  const newState = Object.assign({}, state);
+
   switch(action.type) {
-    default: return state
+    case SET_SPEED:
+      newState.speed = action.speed;
+      return newState;
+
+    default:
+      return state
   }
 };
 

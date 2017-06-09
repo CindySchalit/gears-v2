@@ -4,11 +4,11 @@ import {render} from 'react-dom'
 import { Provider } from 'react-redux'
 
 import store from './store'
-import SpeedSlider from './components/SpeedSlider'
+import SpeedSliderContainer from './containers/SpeedSliderContainer'
 
 render (
   <Provider store={store}>
-    <SpeedSlider id="container"/>
+    <SpeedSliderContainer />
   </Provider>,
   document.getElementById('main')
 )
