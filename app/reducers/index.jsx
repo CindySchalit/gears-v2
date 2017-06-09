@@ -1,7 +1,7 @@
 import { SET_SPEED } from '../constants'
 
 const initialState = {
-  speed: 0,
+  speed: 25,
 }
 
 const rootReducer = function(state = initialState, action) {

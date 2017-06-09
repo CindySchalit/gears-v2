@@ -15,4 +15,31 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SpeedSlider)
+class SpeedSliderContainer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      speed: this.props.speed,
+    }
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({
+      speed: event.target.value,
+    })
+    this.props.setSpeedDispatcher(this.state.speed)
+  }
+
+  render() {
+    return (
+      <SpeedSlider
+        handleChange={this.handleChange}
+        speed={this.state.speed}
+      />
+    )
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SpeedSliderContainer)
