@@ -45,8 +45,8 @@ class SpeedSliderContainer extends Component {
   render() {
     return (
       <SpeedSlider
-        handleChange={this.handleChange}
         speed={this.state.speed}
+        handleChange={this.handleChange}
         handleClick={this.handleClick}
       />
     )
