@@ -7,11 +7,8 @@ import store from './store'
 import AllSliders from './containers'
 
 render (
-  <div>
-    <h1>Shift My Gear!</h1>
-    <Provider store={store}>
-      <AllSliders />
-    </Provider>
-  </div>,
+  <Provider store={store}>
+    <AllSliders />
+  </Provider>,
   document.getElementById('main')
 )
