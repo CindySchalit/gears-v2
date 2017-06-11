@@ -6,15 +6,20 @@ export default class SpeedSlider extends Component {
   }
 
   render() {
-    console.log('PROPS IN SpeedSlider:', this.props)
     return (
-      <input id="mySlider"
-         value={this.props.speed}
-         type="range"
-         min={0}
-         max={110}
-         onChange={this.props.handleChange}
-         step={5} />
+      <div>
+        <input id="mySlider"
+           value={this.props.speed}
+           type="range"
+           min={0}
+           max={5}
+           onChange={this.props.handleChange}
+           step={1} />
+        <button
+          className="btn btn-default btn-xs"
+          onClick={this.props.handleClick}>
+        Set Speed</button>
+      </div>
    );
   }
 }

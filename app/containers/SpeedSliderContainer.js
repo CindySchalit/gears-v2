@@ -23,13 +23,23 @@ class SpeedSliderContainer extends Component {
     }
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleChange(event) {
     this.setState({
       speed: event.target.value,
     })
+  }
+
+  handleClick(event) {
+    this.setState({
+      speed: event.target.value,
+    })
     this.props.setSpeedDispatcher(this.state.speed)
+    this.setState({
+      speed: this.state.speed,
+    })
   }
 
   render() {
@@ -37,6 +47,7 @@ class SpeedSliderContainer extends Component {
       <SpeedSlider
         handleChange={this.handleChange}
         speed={this.state.speed}
+        handleClick={this.handleClick}
       />
     )
   }
