@@ -8,6 +8,7 @@ export default class SpeedSlider extends Component {
   render() {
     return (
       <div>
+        <h3>Speed (mph)</h3>
         <input id="mySlider"
            value={this.props.speed}
            type="range"
@@ -15,7 +16,7 @@ export default class SpeedSlider extends Component {
            max={110}
            onChange={this.props.handleChange}
            step={1} />
-        <h3>You are currently traveling at {this.props.speed} mph!</h3>
+        <h4>You are currently traveling at {this.props.speed} mph!</h4>
         <div>
           <button
             className="btn btn-default btn-xs"

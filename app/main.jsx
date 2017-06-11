@@ -4,11 +4,14 @@ import {render} from 'react-dom'
 import { Provider } from 'react-redux'
 
 import store from './store'
-import SpeedSliderContainer from './containers/SpeedSliderContainer'
+import AllSliders from './containers'
 
 render (
-  <Provider store={store}>
-    <SpeedSliderContainer />
-  </Provider>,
+  <div>
+    <h1>Shift My Gear!</h1>
+    <Provider store={store}>
+      <AllSliders />
+    </Provider>
+  </div>,
   document.getElementById('main')
 )
