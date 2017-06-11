@@ -7,7 +7,7 @@ export default class PedalPressureSlider extends Component {
 
   render() {
     return (
-      <div>
+      <div id="pedal">
         <h3>Accelerator Pedal Pressure</h3>
         <input id="mySlider"
            value={this.props.pedalPressure}
@@ -20,7 +20,8 @@ export default class PedalPressureSlider extends Component {
         <div>
           <button
             className="btn btn-default btn-xs"
-            onClick={this.props.handleClick}>
+            onClick={this.props.handleClick}
+           >
           Set Pedal Pressure</button>
         </div>
       </div>

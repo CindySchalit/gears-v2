@@ -13,3 +13,11 @@ body {
   height: 50vh;
   width: 50vh;
 }
+
+#speed {
+  color: blue;
+}
+
+#pedal {
+  color: red;
+}

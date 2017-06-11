@@ -7,7 +7,7 @@ export default class SpeedSlider extends Component {
 
   render() {
     return (
-      <div>
+      <div id="speed">
         <h3>Speed (mph)</h3>
         <input id="mySlider"
            value={this.props.speed}
