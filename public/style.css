@@ -14,10 +14,12 @@ body {
   width: 50vh;
 }
 
+#pedal {
+  color: #f44336;
+}
+
 #speed {
   color: blue;
 }
 
-#pedal {
-  color: red;
-}
+
