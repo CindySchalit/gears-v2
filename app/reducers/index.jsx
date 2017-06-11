@@ -1,8 +1,9 @@
-import { SET_SPEED, SET_PEDAL_PRESSURE } from '../constants'
+import { SET_SPEED, SET_PEDAL_PRESSURE, SET_RPM } from '../constants'
 
 const initialState = {
   speed: 0,
   pedalPressure: 0,
+  rpm: 0,
 }
 
 const rootReducer = function(state = initialState, action) {
@@ -15,6 +16,10 @@ const rootReducer = function(state = initialState, action) {
 
     case SET_PEDAL_PRESSURE:
       newState.pedalPressure = action.pedalPressure;
+      return newState;
+
+    case SET_RPM:
+      newState.rpm = action.rpm;
       return newState;
 
     default:

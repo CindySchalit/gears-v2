@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import SpeedSliderContainer from './SpeedSliderContainer'
 import PedalPressureSliderContainer from './PedalPressureSliderContainer'
+import RpmSliderContainer from './RpmSliderContainer'
 
 export default class AllSliders extends Component {
   render() {
@@ -16,6 +17,7 @@ export default class AllSliders extends Component {
         </center>
         <PedalPressureSliderContainer />
         <SpeedSliderContainer />
+        <RpmSliderContainer />
       </div>
    );
   }
