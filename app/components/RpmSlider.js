@@ -21,6 +21,13 @@ export default class RpmSlider extends Component {
     return (
       <div id="rpm">
         <h2>Revolutions Per Minute (RPM)</h2>
+        <input id="mySlider"
+           value={rpm}
+           type="range"
+           min={0}
+           max={8000}
+           onChange={this.props.handleChange}
+           step={1} />
         <h3>The engine is turning at {rpm} RPMs!</h3>
         <button
             className="btn btn-default btn-xs"
