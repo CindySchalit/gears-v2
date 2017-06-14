@@ -15,9 +15,11 @@ export default class AllSliders extends Component {
             width="100"
           />
         </center>
-        <PedalPressureSliderContainer />
-        <SpeedSliderContainer />
-        <RpmSliderContainer />
+        <div>
+          <PedalPressureSliderContainer />
+          <SpeedSliderContainer />
+          <RpmSliderContainer />
+        </div>
       </div>
    );
   }

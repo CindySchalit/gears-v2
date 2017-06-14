@@ -14,28 +14,32 @@ body {
   width: 100%;
 }
 
+#mySlider {
+  width: 250px;
+}
+
 #pedal {
   color: #f44336;
   float: left;
-  width: 30%;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 25%;
+  margin-left: 75px;
+  margin-right: 20px;
 }
 
 #speed {
   color: blue;
   float: left;
-  width: 30%;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 25%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #rpm {
   color: #4CAF50;
   float: left;
-  width: 30%;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 25%;
+  margin-left: 20px;
+  margin-right: 75px;
 }
 
 
