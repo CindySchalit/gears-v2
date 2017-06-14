@@ -6,8 +6,6 @@ export default class RpmSlider extends Component {
   }
 
   render() {
-    console.log('PROPS IN RpmSlider:', this.props)
-
     let pedalPressure = null
     let speed = null
     let rpm = null

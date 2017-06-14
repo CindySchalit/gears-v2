@@ -1,43 +1,8 @@
-import React, { Component } from 'react';
-import RpmSlider from '../components/RpmSlider';
-import { setRpm } from '../action-creators/rpm';
-import { connect } from 'react-redux';
-
-const setRpmInContainer = (pedalPressure, speed) => {
-  let rpm
-
-  // no pressure on pedal
-  if (pedalPressure === 0) {
-    return 0
-  }
-
-  // light pressure on pedal
-  if (pedalPressure === 1) {
-    if (speed < 10) {
-      rpm = speed * 228
-    }
-
-    if (speed < 25) {
-      rpm = speed * 133
-    }
-
-    if (speed < 46) {
-      rpm = speed * 94
-    }
-
-    if (speed < 74)  {
-      rpm = speed * 72
-    }
-
-    else {
-      rpm = 7000
-    }
-  }
-
-  // heavy pressure on pedal
-
-  return rpm + 1000
-}
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import RpmSlider from '../components/RpmSlider'
+import { setRpm } from '../action-creators/rpm'
+import setRpmInContainer from './rpmFormula'
 
 const mapStateToProps = (state) => {
   let pedalPressureInRpm = null

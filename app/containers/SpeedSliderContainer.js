@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import SpeedSlider from '../components/SpeedSlider';
-import { setSpeed } from '../action-creators/speed';
-import { connect } from 'react-redux';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import SpeedSlider from '../components/SpeedSlider'
+import { setSpeed } from '../action-creators/speed'
 
 const mapStateToProps = (state) => {
   return {
