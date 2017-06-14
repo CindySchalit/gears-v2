@@ -22,7 +22,7 @@ export default class PedalPressureSlider extends Component {
            max={2}
            onChange={this.props.handleChange}
            step={1} />
-        <h4>You are applying {pressureTypes[this.props.pedalPressure.toString()]} pressure to the pedal!</h4>
+        <h3>You are applying {pressureTypes[this.props.pedalPressure.toString()]} pressure to the pedal!</h3>
         <div>
           <button
             className="btn btn-default btn-xs"

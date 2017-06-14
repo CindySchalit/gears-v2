@@ -16,7 +16,7 @@ export default class SpeedSlider extends Component {
            max={110}
            onChange={this.props.handleChange}
            step={1} />
-        <h4>You are traveling at {this.props.speed} mph!</h4>
+        <h3>You are traveling at {this.props.speed} mph!</h3>
         <div>
           <button
             className="btn btn-default btn-xs"
