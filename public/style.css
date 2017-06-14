@@ -11,19 +11,31 @@ body {
   align-items: center;
   justify-content: center;
   height: 50vh;
-  width: 50vh;
+  width: 100%;
 }
 
 #pedal {
   color: #f44336;
+  float: left;
+  width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #speed {
   color: blue;
+  float: left;
+  width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #rpm {
   color: #4CAF50;
+  float: left;
+  width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 

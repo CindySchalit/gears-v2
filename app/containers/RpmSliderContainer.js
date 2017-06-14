@@ -28,6 +28,10 @@ const setRpmInContainer = (pedalPressure, speed) => {
     if (speed < 74)  {
       rpm = speed * 72
     }
+
+    else {
+      rpm = 7000
+    }
   }
 
   // heavy pressure on pedal

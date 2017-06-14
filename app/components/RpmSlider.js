@@ -28,7 +28,13 @@ export default class RpmSlider extends Component {
            max={8000}
            onChange={this.props.handleChange}
            step={1} />
-        <h3>The engine is turning at {rpm} RPMs!</h3>
+        <div>
+            { rpm < 7999
+                ? <h3>The engine is turning at {rpm} RPMs!</h3>
+                : <h3>YOUR ENGINE IS GOING TO EXPLODE!</h3>
+            }
+        </div>
+
         <button
             className="btn btn-default btn-xs"
             onClick={() => this.props.setRpmDispatcher(rpm) }>
