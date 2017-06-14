@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import PedalPressureSlider from '../components/PedalPressureSlider';
-import { setPedalPressure } from '../action-creators/pedalPressure';
-import { connect } from 'react-redux';
+import React, { Component } from 'react'
+import PedalPressureSlider from '../components/PedalPressureSlider'
+import { setPedalPressure } from '../action-creators/pedalPressure'
+import { connect } from 'react-redux'
 
 const mapStateToProps = (state) => {
   return {
@@ -23,7 +23,7 @@ class PedalPressureSliderContainer extends Component {
     }
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleClick = this.handleClick.bind(this);
+    this.handleStop = this.handleStop.bind(this);
   }
 
   handleChange(event) {
@@ -32,7 +32,7 @@ class PedalPressureSliderContainer extends Component {
     })
   }
 
-  handleClick(event) {
+  handleStop(event) {
     this.setState({
       pedalPressure: event.target.value,
     })
@@ -47,7 +47,7 @@ class PedalPressureSliderContainer extends Component {
       <PedalPressureSlider
         pedalPressure={this.state.pedalPressure}
         handleChange={this.handleChange}
-        handleClick={this.handleClick}
+        handleStop={this.handleStop}
       />
     )
   }

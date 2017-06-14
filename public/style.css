@@ -49,13 +49,15 @@ body {
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 #pedal {
   padding-top: 50px;
   color: #f44336;
   float: left;
-  width: 30%;
+  width: 33%;
+  margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   vertical-align: middle;
@@ -65,7 +67,8 @@ body {
   padding-top: 50px;
   color: blue;
   float: left;
-  width: 30%;
+  width: 33%;
+  margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   vertical-align: middle;
@@ -75,7 +78,8 @@ body {
   padding-top: 50px;
   color: #4CAF50;
   float: left;
-  width: 30%;
+  width: 33%;
+  margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   vertical-align: middle;

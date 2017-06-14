@@ -15,14 +15,9 @@ export default class SpeedSlider extends Component {
            min={0}
            max={110}
            onChange={this.props.handleChange}
+           onMouseUp={this.props.handleStop}
            step={1} />
         <h3>You are traveling at {this.props.speed} mph!</h3>
-        <div>
-          <button
-            className="btn"
-            onClick={this.props.handleClick}>
-          Set Speed</button>
-        </div>
       </div>
    );
   }
