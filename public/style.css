@@ -9,7 +9,6 @@ body {
 #App {
   font-family: "Helvetica";
   text-align: center;
-
 }
 
 #App-Header {
@@ -23,19 +22,33 @@ body {
 #fish {
   padding-top: 20px;
   padding-bottom: 50px;
+  height: 200px;
+  width: 200px;
+}
+
+#container {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  height: 50vh;
+  width: 100%;
+  vertical-align: middle;
 }
 
 #mySlider {
   width: 250px;
 }
 
-#container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50vh;
-  width: 100%;
-  vertical-align: middle;
+.btn {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 #pedal {
@@ -67,5 +80,3 @@ body {
   margin-right: 20px;
   vertical-align: middle;
 }
-
-

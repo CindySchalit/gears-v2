@@ -34,7 +34,7 @@ export default class RpmSlider extends Component {
         </div>
 
         <button
-            className="btn btn-default btn-xs"
+            className="btn"
             onClick={() => this.props.setRpmDispatcher(rpm) }>
           Confirm RPMs</button>
       </div>

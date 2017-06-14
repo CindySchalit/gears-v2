@@ -10,11 +10,8 @@ export default class AllSliders extends Component {
         <div id="App-Header">
           <h1>Bad Fish Gear Shifter</h1>
           <img
-            src="http://drshaunayoung.com/wp-content/uploads/2013/07/mean-fish.png"
-            height="100"
-            width="100"
             id="fish"
-          />
+            src="http://drshaunayoung.com/wp-content/uploads/2013/07/mean-fish.png"/>
         </div>
         <div>
           <PedalPressureSliderContainer />

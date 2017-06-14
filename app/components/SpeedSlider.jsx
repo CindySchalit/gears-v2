@@ -19,7 +19,7 @@ export default class SpeedSlider extends Component {
         <h3>You are traveling at {this.props.speed} mph!</h3>
         <div>
           <button
-            className="btn btn-default btn-xs"
+            className="btn"
             onClick={this.props.handleClick}>
           Set Speed</button>
         </div>
