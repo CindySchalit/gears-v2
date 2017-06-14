@@ -1,9 +1,32 @@
 body {
-  display: flex;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   justify-content: center;
+  display: block;
+}
+
+#App {
+  font-family: "Helvetica";
+  text-align: center;
+
+}
+
+#App-Header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+#fish {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+#mySlider {
+  width: 250px;
 }
 
 #container {
@@ -12,34 +35,37 @@ body {
   justify-content: center;
   height: 50vh;
   width: 100%;
-}
-
-#mySlider {
-  width: 250px;
+  vertical-align: middle;
 }
 
 #pedal {
+  padding-top: 50px;
   color: #f44336;
   float: left;
-  width: 25%;
-  margin-left: 75px;
+  width: 30%;
+  margin-left: 20px;
   margin-right: 20px;
+  vertical-align: middle;
 }
 
 #speed {
+  padding-top: 50px;
   color: blue;
   float: left;
-  width: 25%;
+  width: 30%;
   margin-left: 20px;
   margin-right: 20px;
+  vertical-align: middle;
 }
 
 #rpm {
+  padding-top: 50px;
   color: #4CAF50;
   float: left;
-  width: 25%;
+  width: 30%;
   margin-left: 20px;
-  margin-right: 75px;
+  margin-right: 20px;
+  vertical-align: middle;
 }
 
 
