@@ -54,14 +54,7 @@ body {
 }
 
 #pedal {
-  padding-top: 50px;
-  color: #f44336;
-  float: left;
-  width: 33%;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  vertical-align: middle;
+  color: #2c40d0;
 }
 
 #speed {
@@ -106,7 +99,7 @@ body {
 .rc-slider-rail {
   position: absolute;
   width: 100%;
-  background-color: #607d8b;
+  background-color: #133c50;
   height: 4px;
   border-radius: 6px;
 }
@@ -154,7 +147,7 @@ body {
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
-  color: #f44336;
+  color: #133c50;
   font-size: x-large;
   font-weight: bold;
 }

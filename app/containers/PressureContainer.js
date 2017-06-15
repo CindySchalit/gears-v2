@@ -53,7 +53,7 @@ class PressureContainer extends Component {
   render() {
     return (
       <div style={style}>
-        <h1>How much pressure are you applying to the accelerator pedal?</h1>
+        <h1 id="pedal">How much pressure are you applying to the accelerator pedal?</h1>
         <Slider
           value={this.state.pedalPressure}
           onChange={this.onSliderChange}
@@ -63,7 +63,7 @@ class PressureContainer extends Component {
           marks={marks}
           step={1}
         />
-        <h2>You are applying {pressureTypes[this.state.pedalPressure.toString()]} pressure!</h2>
+        <h2 id="pedal">You are applying {pressureTypes[this.state.pedalPressure.toString()]} pressure!</h2>
       </div>
     )
   }
