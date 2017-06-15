@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
-import SpeedSliderContainer from './SpeedSliderContainer'
-import PedalPressureSliderContainer from './PedalPressureSliderContainer'
-import RpmSliderContainer from './RpmSliderContainer'
-import TestContainer from './TestContainer'
+import SpeedContainer from './SpeedContainer'
 
 export default class AllSliders extends Component {
   render() {
@@ -14,8 +11,8 @@ export default class AllSliders extends Component {
             id="fish"
             src="http://drshaunayoung.com/wp-content/uploads/2013/07/mean-fish.png"/>
         </div>
-        <div className="container">
-          <TestContainer className="rc-slider"/>
+        <div>
+          <SpeedContainer className="rc-slider"/>
         </div>
       </div>
    );
