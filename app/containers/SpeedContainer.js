@@ -48,18 +48,19 @@ class SpeedContainer extends Component {
 
   render() {
     return (
-    <div style={style}>
-      <h1>How fast do you want to go?</h1>
-      <Slider
-        value={this.state.speed}
-        onChange={this.onSliderChange}
-        onAfterChange={this.onAfterChange}
-        min={0}
-        max={110}
-        marks={marks}
-        step={1}
-      />
-    </div>
+      <div style={style}>
+        <h1>How fast do you want to go?</h1>
+        <Slider
+          value={this.state.speed}
+          onChange={this.onSliderChange}
+          onAfterChange={this.onAfterChange}
+          min={0}
+          max={110}
+          marks={marks}
+          step={1}
+        />
+        <h2>You are going {this.state.speed} mph!</h2>
+      </div>
     )
   }
 }
