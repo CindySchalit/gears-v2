@@ -18,6 +18,7 @@ body {
   color: white;
   text-align: center;
   width: 100%;
+  font-size: 1.5em;
 }
 
 #fish {
@@ -148,7 +149,7 @@ body {
   text-align: center;
   cursor: pointer;
   color: #133c50;
-  font-size: x-large;
+  font-size: large;
   font-weight: bold;
 }
 .rc-slider-mark-text-active {

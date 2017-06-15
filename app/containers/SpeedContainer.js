@@ -49,7 +49,7 @@ class SpeedContainer extends Component {
   render() {
     return (
       <div style={style}>
-        <h1>How fast do you want to go?</h1>
+        <h2>How fast do you want to go?</h2>
         <Slider
           value={this.state.speed}
           onChange={this.onSliderChange}
@@ -59,7 +59,7 @@ class SpeedContainer extends Component {
           marks={marks}
           step={1}
         />
-        <h2>You are going {this.state.speed} mph!</h2>
+        <h3>You are going {this.state.speed} mph!</h3>
       </div>
     )
   }
