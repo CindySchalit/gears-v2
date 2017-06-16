@@ -45,12 +45,6 @@ const mapDispatchToProps = (dispatch) => {
 class RpmContainer extends Component {
   constructor(props) {
     super(props);
-
-    this.onChange = this.onChange.bind(this)
-  }
-
-  onChange (value) {
-    this.props.setRpmDispatcher(this.props.rpm)
   }
 
   componentWillReceiveProps(nextProps) {
@@ -63,7 +57,6 @@ class RpmContainer extends Component {
         <h2 id="rpm">Revolutions Per Minute (RPM)</h2>
         <Slider
           value={this.props.rpm}
-          onChange={this.onChange}
           min={0}
           max={8000}
           marks={marks}
