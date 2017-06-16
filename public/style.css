@@ -6,10 +6,40 @@ body {
   display: block;
 }
 
-#container{width:100%;}
-#left{float:left;width:100px;}
-#right{float:right;width:100px;}
-#center{margin:0 auto;width:100px;}
+#container {
+  position: relative;
+  width:100%;
+}
+
+#left {
+  float:left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+}
+
+#right {
+  float:right;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+}
+
+#center {
+  margin:0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+}
 
 #App {
   font-family: "Helvetica";

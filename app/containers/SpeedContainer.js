@@ -33,17 +33,18 @@ class SpeedContainer extends Component {
     }
 
     this.onSliderChange = this.onSliderChange.bind(this)
-    this.onAfterChange = this.onAfterChange.bind(this)
   }
 
   onSliderChange (value) {
     this.setState({
       speed: value,
     })
-  }
 
-  onAfterChange (value) {
     this.props.setSpeedDispatcher(this.state.speed)
+
+    this.setState({
+      speed: value,
+    })
   }
 
   render() {
@@ -53,7 +54,6 @@ class SpeedContainer extends Component {
         <Slider
           value={this.state.speed}
           onChange={this.onSliderChange}
-          onAfterChange={this.onAfterChange}
           min={0}
           max={110}
           marks={marks}
