@@ -15,8 +15,8 @@ export default class AllSliders extends Component {
         </div>
         <div id="container">
           <PressureContainer className="rc-slider" id="left"/>
-          <RpmContainer className="rc-slider" id="right"/>
-          <SpeedContainer className="rc-slider" id="center"/>
+          <SpeedContainer className="rc-slider" id="right"/>
+          <RpmContainer className="rc-slider" id="center"/>
         </div>
       </div>
    );
