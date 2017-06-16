@@ -74,7 +74,12 @@ class RpmContainer extends Component {
           marks={marks}
           step={1}
         />
-        <h3 id="rpm">Your engine is turning at {this.props.rpm} RPMs!</h3>
+        <div>
+            { this.props.rpm < 7999
+                ? <h3 id="rpm">Your engine is turning at {this.props.rpm} RPMs!</h3>
+                : <h3 id="rpm">YOUR ENGINE IS GOING TO EXPLODE!</h3>
+            }
+        </div>
       </div>
     )
   }
