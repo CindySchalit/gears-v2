@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import SpeedContainer from './SpeedContainer'
 import PressureContainer from './PressureContainer'
 import RpmContainer from './RpmContainer'
+import GearContainer from './GearContainer'
 
 export default class AllSliders extends Component {
   render() {
@@ -18,6 +19,7 @@ export default class AllSliders extends Component {
           <SpeedContainer className="rc-slider" id="right"/>
           <RpmContainer className="rc-slider" id="center"/>
         </div>
+        <GearContainer />
       </div>
    );
   }
