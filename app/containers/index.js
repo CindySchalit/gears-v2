@@ -14,8 +14,8 @@ export default class AllSliders extends Component {
             src="http://drshaunayoung.com/wp-content/uploads/2013/07/mean-fish.png"/>
         </div>
         <div>
-          <SpeedContainer className="rc-slider"/>
           <PressureContainer className="rc-slider"/>
+          <SpeedContainer className="rc-slider"/>
           <RpmContainer className="rc-slider"/>
         </div>
       </div>
