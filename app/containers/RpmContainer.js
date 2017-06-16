@@ -53,6 +53,10 @@ class RpmContainer extends Component {
     this.props.setRpmDispatcher(this.props.rpm)
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.props.setRpmDispatcher(nextProps.rpm)
+  }
+
   render() {
     return (
       <div style={style}>
