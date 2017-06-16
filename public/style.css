@@ -58,20 +58,13 @@ body {
   color: #2c40d0;
 }
 
+#rpm {
+  color: #31cb37;
+}
+
 #speed {
   padding-top: 50px;
   color: blue;
-  float: left;
-  width: 33%;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  vertical-align: middle;
-}
-
-#rpm {
-  padding-top: 50px;
-  color: #4CAF50;
   float: left;
   width: 33%;
   margin-top: 20px;

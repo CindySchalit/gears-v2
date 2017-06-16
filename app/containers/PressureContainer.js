@@ -8,7 +8,7 @@ const style = {width: 800, margin: 50};
 const marks = {
   0: 'Zzz ...',
   1: 'On the Road',
-  2: 'PEDAL TO THE MEDAL!',
+  2: 'PEDAL TO THE METAL!',
 }
 
 const pressureTypes = {
