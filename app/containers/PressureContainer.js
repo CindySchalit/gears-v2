@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import Slider from 'rc-slider'
 import { setPedalPressure } from '../action-creators/pedalPressure'
 
-const style = {width: 800, margin: 50};
+const style = {width: 800, margin: 100};
 
 const marks = {
   0: 'Zzz ...',

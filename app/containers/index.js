@@ -13,10 +13,10 @@ export default class AllSliders extends Component {
             id="fish"
             src="http://drshaunayoung.com/wp-content/uploads/2013/07/mean-fish.png"/>
         </div>
-        <div>
-          <PressureContainer className="rc-slider"/>
-          <SpeedContainer className="rc-slider"/>
-          <RpmContainer className="rc-slider"/>
+        <div id="container">
+          <PressureContainer className="rc-slider" id="left"/>
+          <RpmContainer className="rc-slider" id="right"/>
+          <SpeedContainer className="rc-slider" id="center"/>
         </div>
       </div>
    );

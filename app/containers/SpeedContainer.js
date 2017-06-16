@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import Slider from 'rc-slider'
 import { setSpeed } from '../action-creators/speed'
 
-const style = {width: 800, margin: 50}
+const style = {width: 800, margin: 100}
 
 const marks = {
   0: '0 mph',

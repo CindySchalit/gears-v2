@@ -4,18 +4,18 @@ import Slider from 'rc-slider'
 import { setRpm } from '../action-creators/rpm'
 import setRpmInContainer from './rpmFormula'
 
-const style = {width: 800, margin: 50}
+const style = {width: 800, margin: 100}
 
 const marks = {
   0: '0 RPMs',
-  1000: '1,000',
-  2000: '2,000',
-  3000: '3,000',
-  4000: '4,000',
-  5000: '5,000',
-  6000: '6,000',
-  7000: '7,000',
-  8000: '8,000',
+  1000: '1',
+  2000: '2',
+  3000: '3',
+  4000: '4',
+  5000: '5',
+  6000: '6',
+  7000: '7',
+  8000: '8',
 }
 
 const mapStateToProps = (state) => {
@@ -54,7 +54,7 @@ class RpmContainer extends Component {
   render() {
     return (
       <div style={style}>
-        <h2 id="rpm">Revolutions Per Minute (RPM)</h2>
+        <h2 id="rpm">Revolutions Per Minute (in 1,000 RPMs)</h2>
         <Slider
           value={this.props.rpm}
           min={0}
