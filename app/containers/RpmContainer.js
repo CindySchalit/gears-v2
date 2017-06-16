@@ -46,18 +46,10 @@ class RpmContainer extends Component {
   constructor(props) {
     super(props);
 
-    this.onSliderChange = this.onSliderChange.bind(this)
-    this.onAfterChange = this.onAfterChange.bind(this)
+    this.onChange = this.onChange.bind(this)
   }
 
-  onSliderChange (value) {
-    value = this.props.rpm
-    this.setState({
-      rpm: value,
-    })
-  }
-
-  onAfterChange (value) {
+  onChange (value) {
     this.props.setRpmDispatcher(this.props.rpm)
   }
 
@@ -67,8 +59,7 @@ class RpmContainer extends Component {
         <h2 id="rpm">Revolutions Per Minute (RPM)</h2>
         <Slider
           value={this.props.rpm}
-          onChange={this.onSliderChange}
-          onAfterChange={this.onAfterChange}
+          onChange={this.onChange}
           min={0}
           max={8000}
           marks={marks}
