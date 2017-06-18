@@ -12,7 +12,10 @@ body {
 }
 
 #gear {
+  text-align: left;
   font-size: 3em;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 #container {
