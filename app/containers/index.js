@@ -22,6 +22,7 @@ export default class AllSliders extends Component {
         <div className="center-div">
           <GearContainer/>
         </div>
+        <p id="space"></p>
       </div>
    );
   }
