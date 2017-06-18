@@ -16,6 +16,7 @@ const marks = {
 
 const mapStateToProps = (state) => {
   return {
+    pedalPressure: state.pedalPressure,
     speed: state.speed,
   }
 }
@@ -37,15 +38,23 @@ class SpeedContainer extends Component {
   }
 
   onSliderChange (value) {
-    this.setState({
-      speed: value,
-    })
+    if (!this.props.pedalPressure) {
+      this.setState({
+        speed: 0,
+      })
+    }
 
-    this.props.setSpeedDispatcher(this.state.speed)
+    else {
+      this.setState({
+        speed: value,
+      })
 
-    this.setState({
-      speed: value,
-    })
+      this.props.setSpeedDispatcher(this.state.speed)
+
+      this.setState({
+        speed: value,
+      })
+    }
   }
 
   render() {

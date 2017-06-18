@@ -10,12 +10,6 @@ const mapStateToProps = (state) => {
   }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     setGear: (gear) => dispatch(setGear(gear))
-//   }
-// }
-
 const GearContainer = (props) => {
   console.log('~~~~~ props in GearContainer:', props)
   const pedalPressure = parseInt(props.pedalPressure)
