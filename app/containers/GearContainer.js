@@ -18,10 +18,12 @@ const mapStateToProps = (state) => {
 
 const GearContainer = (props) => {
   console.log('~~~~~ props in GearContainer:', props)
+  const pedalPressure = parseInt(props.pedalPressure)
+  const speed = parseInt(props.speed)
+  const rpm = parseInt(props.rpm)
+
   return (
-    <h1>
-      {parseInt(props.pedalPressure) + parseInt(props.speed) + parseInt(props.rpm)}
-    </h1>
+    <h1 id="gear">{rpm}</h1>
   )
 }
 

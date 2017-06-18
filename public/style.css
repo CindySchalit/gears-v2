@@ -11,6 +11,10 @@ body {
   padding-top: 50px;
 }
 
+#gear {
+  font-size: 3em;
+}
+
 #container {
   position: relative;
   width:100%;

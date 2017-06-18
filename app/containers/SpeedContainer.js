@@ -6,11 +6,12 @@ import { setSpeed } from '../action-creators/speed'
 const style = {width: 800, margin: 100}
 
 const marks = {
-  0: '0 mph',
-  35: '35 mph',
-  60: '60 mph',
-  85: '85 mph',
-  110: '110 mph',
+  0: '0',
+  20: '20',
+  40: '40',
+  60: '60',
+  80: '80',
+  100: '100',
 }
 
 const mapStateToProps = (state) => {
@@ -50,7 +51,7 @@ class SpeedContainer extends Component {
   render() {
     return (
       <div style={style}>
-        <h2>How fast do you want to go?</h2>
+        <h2>How fast do you want to go? (mph)</h2>
         <Slider
           value={this.state.speed}
           onChange={this.onSliderChange}
