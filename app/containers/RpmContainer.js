@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Slider from 'rc-slider'
-import { setRpm } from '../action-creators/rpm'
+// import { setRpm } from '../action-creators/rpm'
 import setRpmInContainer from './rpmFormula'
 
 const style = {width: 800, margin: 100}
@@ -36,19 +36,9 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    setRpmDispatcher: (rpm) => dispatch(setRpm(rpm))
-  }
-}
-
 class RpmContainer extends Component {
   constructor(props) {
     super(props);
-  }
-
-  componentWillReceiveProps(nextProps) {
-    this.props.setRpmDispatcher(nextProps.rpm)
   }
 
   render() {
@@ -73,6 +63,6 @@ class RpmContainer extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(RpmContainer)
+export default connect(mapStateToProps)(RpmContainer)
 
 
