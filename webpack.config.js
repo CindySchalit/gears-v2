@@ -6,7 +6,8 @@ module.exports = {
   entry: './app/main.jsx',
   output: {
     path: __dirname,
-    filename: './public/bundle.js'
+    filename: './public/bundle.js',
+    publicPath: '/',
   },
   context: __dirname,
   devtool: 'source-map',
