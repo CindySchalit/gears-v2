@@ -16,7 +16,7 @@ const GearContainer = (props) => {
   const gear = props && props.gear
 
   return (
-    <h1 id="gear">Your car is in {gear} Gear!</h1>
+    <h1 id="gear">{gear} Gear!</h1>
   )
 }
 
