@@ -12,7 +12,7 @@ export default class AllSliders extends Component {
           <h1>Bad Fish Gear Shifter</h1>
           <img
             id="fish"
-            src="http://drshaunayoung.com/wp-content/uploads/2013/07/mean-fish.png"/>
+            src="bad-fish.png"/>
         </div>
         <div id="container">
           <PressureContainer className="rc-slider" id="left"/>

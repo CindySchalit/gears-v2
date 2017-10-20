@@ -1,22 +1,22 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import calculateGear from './gearFormula'
+import calculateGear from './calculations/gearFormula'
 
 const mapStateToProps = (state) => {
+  const pedalPressure = state.pedalPressure
+  const speed = state.speed
+  const gear = calculateGear(pedalPressure, speed)
+
   return {
-    pedalPressure: state.pedalPressure,
-    speed: state.speed,
+    gear,
   }
 }
 
 const GearContainer = (props) => {
-  const pedalPressure = parseInt(props.pedalPressure)
-  const speed = parseInt(props.speed)
-
-  const gear = calculateGear(pedalPressure, speed)
+  const gear = props && props.gear
 
   return (
-    <h1 id="gear">{gear} Gear!</h1>
+    <h1 id="gear">Your car is in {gear} Gear!</h1>
   )
 }
 

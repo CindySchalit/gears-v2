@@ -1,4 +1,4 @@
-const setRpmInContainer = (pedalPressure, speed) => {
+const getRpm = (pedalPressure, speed) => {
   // no pressure on pedal
   if (pedalPressure === 0) {
     return 0
@@ -57,4 +57,4 @@ const setRpmInContainer = (pedalPressure, speed) => {
   }
 }
 
-export default setRpmInContainer
+export default getRpm

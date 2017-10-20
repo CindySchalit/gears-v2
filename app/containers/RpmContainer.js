@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Slider from 'rc-slider'
-import { setRpm } from '../action-creators/rpm'
-import setRpmInContainer from './rpmFormula'
+import getRpm from './calculations/rpmFormula'
 
 const style = {width: 800, margin: 100}
 
@@ -19,38 +18,17 @@ const marks = {
 }
 
 const mapStateToProps = (state) => {
-  let pedalPressureInRpm = null
-  let speedInRpm = null
+  const pedalPressure = state.pedalPressure
+  const speed = state.speed
 
-  if (state) {
-    pedalPressureInRpm = state.pedalPressure
-    speedInRpm = state.speed
-  }
-
-  let rpm = setRpmInContainer(parseInt(pedalPressureInRpm), parseInt(speedInRpm))
+  const rpm = getRpm(parseInt(pedalPressure), parseInt(speed))
 
   return {
-    pedalPressure: pedalPressureInRpm,
-    speed: speedInRpm,
     rpm,
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    setRpmDispatcher: (rpm) => dispatch(setRpm(rpm))
-  }
-}
-
 class RpmContainer extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  componentWillReceiveProps(nextProps) {
-    this.props.setRpmDispatcher(nextProps.rpm)
-  }
-
   render() {
     return (
       <div style={style}>
@@ -73,6 +51,6 @@ class RpmContainer extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(RpmContainer)
+export default connect(mapStateToProps)(RpmContainer)
 
 
