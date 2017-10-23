@@ -53,7 +53,7 @@ class PressureContainer extends Component {
   render() {
     return (
       <div style={style}>
-        <h2 id="pedal">How much pressure are you applying to the accelerator pedal?</h2>
+        <h2 id="pedal">How much pedal pressure are you applying?</h2>
         <Slider
           value={this.state.pedalPressure}
           onChange={this.onSliderChange}

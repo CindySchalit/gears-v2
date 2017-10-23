@@ -6,7 +6,7 @@ import getRpm from './calculations/rpmFormula'
 const style = {width: 800, margin: 100}
 
 const marks = {
-  0: '0 RPMs',
+  0: '0',
   1000: '1',
   2000: '2',
   3000: '3',
