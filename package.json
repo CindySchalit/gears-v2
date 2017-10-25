@@ -35,9 +35,7 @@
     "redux-logger": "^2.7.0",
     "redux-thunk": "^2.1.0",
     "sequelize": "^3.24.6",
+    "volleyball": "^1.4.1",
     "webpack": "^1.13.3"
-  },
-  "devDependencies": {
-    "volleyball": "^1.4.1"
   }
 }
