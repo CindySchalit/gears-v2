@@ -1,0 +1,6 @@
+{
+  "name": "Bad Fish Gear Shifter",
+  "description": "Enter pedal pressure and speed - get your gear",
+  "repository": "https://github.com/CindySchalit/gears-v2",
+  "keywords": ["react", "rc-slider", "redux"]
+}
