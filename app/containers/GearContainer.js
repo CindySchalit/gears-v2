@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import calculateGear from './calculations/gearFormula'
+import calculateGear from './selectors/gearFormula'
 
 const mapStateToProps = (state) => {
   const pedalPressure = state.pedalPressure

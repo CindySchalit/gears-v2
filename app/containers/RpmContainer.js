@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Slider from 'rc-slider'
-import getRpm from './calculations/rpmFormula'
+import getRpm from './selectors/rpmFormula'
 
 const style = {width: 800, margin: 100}
 
