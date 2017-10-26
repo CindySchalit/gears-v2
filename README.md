@@ -4,7 +4,7 @@ https://bad-fish-gear-shifter.herokuapp.com/
 
 ## **Introduction**
 
-Bad Fish Gear Shifter is a digital implementation of a car's gear shifter.  Users enter the amount of pressure they are applying to the accelerator pedal and the speed at which they are traveling.  Bad Fish Gear Shifter then determines how fast the components in your car's engine are rotating (in revolutions per minute or "RPM") and the corresponding gear.
+Bad Fish Gear Shifter is a digital implementation of a car's gear shifter.  Users enter the amount of pressure they are applying to the accelerator pedal and the speed at which they are traveling.  Bad Fish Gear Shifter then determines how fast the components in the car's engine are rotating (in revolutions per minute or "RPM") and the corresponding gear.
 
 ## **Inspiration**
 
