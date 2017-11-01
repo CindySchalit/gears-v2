@@ -6,58 +6,6 @@ body {
   display: block;
 }
 
-#space {
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
-#gear {
-  text-align: center;
-  font-size: 2.5em;
-  padding-top: 50px;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-#container {
-  position: relative;
-  width:100%;
-}
-
-#left {
-  float:left;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 30%;
-  width: 50%;
-  margin: -15% 0 0 -25%;
-}
-
-#right {
-  float:right;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 30%;
-  width: 50%;
-  margin: -15% 0 0 -25%;
-}
-
-#center {
-  margin:0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 30%;
-  width: 50%;
-  margin: -15% 0 0 -25%;
-}
-
-.center-div {
-  color: #b456c4;
-}
-
 #App {
   font-family: "Helvetica";
   text-align: left;
@@ -87,23 +35,7 @@ body {
   height: 50vh;
   width: 100%;
   vertical-align: middle;
-}
-
-#mySlider {
-  width: 250px;
-}
-
-.btn {
-  background-color: gray;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  position: relative;
 }
 
 #pedal {
@@ -114,17 +46,15 @@ body {
   color: #4caf50;
 }
 
-#speed {
+#gear {
+  text-align: center;
+  font-size: 1.5em;
   padding-top: 50px;
-  color: blue;
-  float: left;
-  width: 33%;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  vertical-align: middle;
+  display: inline-block;
+  white-space: nowrap;
 }
 
+/* below from rc-slider library */
 .rc-slider {
   position: relative;
   margin-top: 50px;

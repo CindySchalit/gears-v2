@@ -3,7 +3,10 @@ import { connect } from 'react-redux'
 import Slider from 'rc-slider'
 import getRpm from './selectors/rpmFormula'
 
-const style = {width: 800, margin: 100}
+const style = {
+  width: 800,
+  margin: 100
+}
 
 const marks = {
   0: '0',
@@ -52,5 +55,3 @@ class RpmContainer extends Component {
 }
 
 export default connect(mapStateToProps)(RpmContainer)
-
-
