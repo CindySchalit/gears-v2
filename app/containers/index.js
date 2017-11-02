@@ -22,6 +22,15 @@ export default class AllSliders extends Component {
         <center>
           <GearContainer/>
         </center>
+        <footer id="footer">
+          <p id="footer-header">
+            &copy; 2017
+            <br></br>
+            Made for Peeeeelllooooosss by Wifeysita
+            <br></br>
+            Also for Car Lovers
+          </p>
+        </footer>
       </div>
    );
   }
