@@ -3,15 +3,10 @@ import { connect } from 'react-redux'
 import Slider from 'rc-slider'
 import { setPedalPressure } from '../action-creators/pedalPressure'
 
-const style = {
-  width: 800,
-  margin: 100
-}
-
 const marks = {
   0: 'Zzz ...',
   1: 'On the Road',
-  2: 'PEDAL TO THE METAL!',
+  2: 'Flooring it!',
 }
 
 const pressureTypes = {
@@ -55,7 +50,7 @@ class PressureContainer extends Component {
 
   render() {
     return (
-      <div style={style}>
+      <div id="slider">
         <h2 id="pedal">How much pedal pressure are you applying?</h2>
         <Slider
           value={this.state.pedalPressure}

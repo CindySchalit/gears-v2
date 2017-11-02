@@ -1,11 +1,3 @@
-body {
-  height: 100vh;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  display: block;
-}
-
 #App {
   font-family: "Helvetica";
   text-align: left;
@@ -30,16 +22,21 @@ body {
 
 #container {
   display: flex;
-  align-items: left;
-  justify-content: left;
-  height: 50vh;
-  width: 100%;
-  vertical-align: middle;
-  position: relative;
+}
+
+#slider {
+  flex: 1;
+  float: left;
+  width: 30%;
+  margin: 100px;
 }
 
 #pedal {
   color: #2c40d0;
+}
+
+#speed {
+  color: #f44336;
 }
 
 #rpm {
@@ -47,11 +44,9 @@ body {
 }
 
 #gear {
-  text-align: center;
-  font-size: 1.5em;
-  padding-top: 50px;
-  display: inline-block;
-  white-space: nowrap;
+  font-size: 2.5em;
+  color: #9c27b0;
+  margin: auto;
 }
 
 /* below from rc-slider library */

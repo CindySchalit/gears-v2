@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import GridComponent from './GridComponent'
+import PressureContainer from './PressureContainer'
+import SpeedContainer from './SpeedContainer'
+import RpmContainer from './RpmContainer'
 import GearContainer from './GearContainer'
 
 export default class AllSliders extends Component {
@@ -13,11 +15,13 @@ export default class AllSliders extends Component {
             src="bad-fish.png"/>
         </div>
         <div id="container">
-          <GridComponent />
+          <PressureContainer />
+          <SpeedContainer />
+          <RpmContainer />
         </div>
-        <div id="gear">
+        <center>
           <GearContainer/>
-        </div>
+        </center>
       </div>
    );
   }

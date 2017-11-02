@@ -4,7 +4,8 @@ import Slider from 'rc-slider'
 import getRpm from './selectors/rpmFormula'
 
 const style = {
-  width: 800,
+  float: "left",
+  width: "33%",
   margin: 100
 }
 
@@ -34,7 +35,7 @@ const mapStateToProps = (state) => {
 class RpmContainer extends Component {
   render() {
     return (
-      <div style={style}>
+      <div id="slider">
         <h2 id="rpm">Revolutions Per Minute (in 1,000 RPMs)</h2>
         <Slider
           value={this.props.rpm}
