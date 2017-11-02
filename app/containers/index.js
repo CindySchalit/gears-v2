@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import SpeedContainer from './SpeedContainer'
 import PressureContainer from './PressureContainer'
+import SpeedContainer from './SpeedContainer'
 import RpmContainer from './RpmContainer'
 import GearContainer from './GearContainer'
 
@@ -15,14 +15,13 @@ export default class AllSliders extends Component {
             src="bad-fish.png"/>
         </div>
         <div id="container">
-          <PressureContainer className="rc-slider" id="left"/>
-          <SpeedContainer className="rc-slider" id="right"/>
-          <RpmContainer className="rc-slider" id="center"/>
+          <PressureContainer />
+          <SpeedContainer />
+          <RpmContainer />
         </div>
-        <center className="center-div">
+        <center>
           <GearContainer/>
         </center>
-        <p id="space"></p>
       </div>
    );
   }

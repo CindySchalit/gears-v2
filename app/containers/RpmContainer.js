@@ -3,7 +3,11 @@ import { connect } from 'react-redux'
 import Slider from 'rc-slider'
 import getRpm from './selectors/rpmFormula'
 
-const style = {width: 800, margin: 100}
+const style = {
+  float: "left",
+  width: "33%",
+  margin: 100
+}
 
 const marks = {
   0: '0',
@@ -31,7 +35,7 @@ const mapStateToProps = (state) => {
 class RpmContainer extends Component {
   render() {
     return (
-      <div style={style}>
+      <div id="slider">
         <h2 id="rpm">Revolutions Per Minute (in 1,000 RPMs)</h2>
         <Slider
           value={this.props.rpm}
@@ -52,5 +56,3 @@ class RpmContainer extends Component {
 }
 
 export default connect(mapStateToProps)(RpmContainer)
-
-

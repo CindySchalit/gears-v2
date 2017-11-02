@@ -3,8 +3,6 @@ import { connect } from 'react-redux'
 import Slider from 'rc-slider'
 import { setSpeed } from '../action-creators/speed'
 
-const style = {width: 800, margin: 100}
-
 const marks = {
   0: '0',
   20: '20',
@@ -59,8 +57,8 @@ class SpeedContainer extends Component {
 
   render() {
     return (
-      <div style={style}>
-        <h2>How fast do you want to go? (mph)</h2>
+      <div id="slider">
+        <h2 id="speed">How fast do you want to go? (mph)</h2>
         <Slider
           value={this.state.speed}
           onChange={this.onSliderChange}
@@ -69,7 +67,7 @@ class SpeedContainer extends Component {
           marks={marks}
           step={1}
         />
-        <h3>You are going {this.state.speed} mph!</h3>
+        <h3 id="speed">You are going {this.state.speed} mph!</h3>
       </div>
     )
   }
